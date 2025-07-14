@@ -6,7 +6,7 @@ services:
       args:
         IPEXLLM_RELEASE_REPO: mattcurf/ollama-intel-gpu
         IPEXLLM_RELEASE_VERSON: v0.0.3
-        IPEXLLM_PORTABLE_ZIP_FILENAME:  ollama-ipex-llm-2.3.0b20250415-ubuntu.tgz
+        IPEXLLM_PORTABLE_ZIP_FILENAME: ollama-ipex-llm-2.3.0b20250415-ubuntu.tgz
     container_name: ollama-intel-gpu
     restart: always
     devices:
