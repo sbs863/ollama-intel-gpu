@@ -26,7 +26,7 @@ RUN mkdir -p /tmp/gpu && \
 # Install Ollama Portable Zip https://github.com/ipex-llm/ipex-llm/releases/download/v2.3.0-nightly/ollama-ipex-llm-2.3.0b20250710-ubuntu.tgz
 ARG IPEXLLM_PORTABLE_ZIP_FILENAME=ollama-ipex-llm-2.3.0b20250415-ubuntu.tgz
 RUN cd / && \
-  wget https://github.com/intel/ipex-llm/releases/download/v2.3.0-nightly/${IPEXLLM_PORTABLE_ZIP_FILENAME} && \
+  wget https://github.com/intel/ipex-llm/ipex-llm/releases/download/v2.3.0-nightly/${IPEXLLM_PORTABLE_ZIP_FILENAME} && \
   tar xvf ${IPEXLLM_PORTABLE_ZIP_FILENAME} --strip-components=1 -C /
 
 ENV OLLAMA_HOST=0.0.0.0:11434
