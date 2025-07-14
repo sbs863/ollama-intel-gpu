@@ -17,7 +17,7 @@ RUN mkdir -p /tmp/gpu && \
  wget https://github.com/oneapi-src/level-zero/releases/download/v1.22.4/level-zero_1.22.4+u22.04_amd64.deb && \ 
  wget https://github.com/intel/intel-graphics-compiler/releases/download/v2.14.1/intel-igc-core-2_2.14.1+19448_amd64.deb && \
  wget https://github.com/intel/intel-graphics-compiler/releases/download/v2.14.1/intel-igc-opencl-2_2.14.1+19448_amd64.deb && \
- wget https://github.com/intel/compute-runtime/releases/download/25.22.33944.8/intel-ocloc_25.22.33944.8-0_amd64.deb && \
+ wget https://github.com/intel/compute-runtime/releases/download/25.22.33944.8/libze-intel-gpu1_25.22.33944.8-0_amd64.deb && \
  wget https://github.com/intel/compute-runtime/releases/download/25.22.33944.8/intel-opencl-icd_25.22.33944.8-0_amd64.deb && \
  wget https://github.com/intel/compute-runtime/releases/download/25.22.33944.8/libigdgmm12_22.7.0_amd64.deb && \
  dpkg -i *.deb && \
