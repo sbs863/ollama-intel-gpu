@@ -24,9 +24,9 @@ services:
     depends_on:
       - ollama-intel-gpu
     ports:
-      - ${OLLAMA_WEBUI_PORT-3000}:8080
+      - ${OLLAMA_WEBUI_PORT-3000}:3000
     environment:
-      - OLLAMA_BASE_URL=http://ollama-intel-gpu:11434
+      - OLLAMA_BASE_URL=http://0.0.0.0:11434
     extra_hosts:
       - host.docker.internal:host-gateway
     restart: unless-stopped
